@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0; padding:0;
+            font-family: 'Spoqa Han Sans Neo';
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .header{
+            width:100vw;
+            height:9vh;
+            background:#FF8E66;
+            position: fixed;
+            z-index:5;
+            
+        }
+        .logo{
+            margin-left:5vw;
+            margin-top:1vh;
+            width:20vw;
+            height:7vh;
+        }
+        .main{
+            display:flex;
+            padding-top:9vh;
+            height:91vh;
+            background:url('https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/background.svg');
+            background-size : cover;
+            background-repeat: no-repeat;
+        }
+        
+        .MainText{
+            margin-top:15vh;
+            width:72vw;
+            height:50vh;
+        }
+        .text{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            width:72vw;
+            height:15vh;
+        }   
+
+
+        .textImg1{
+            width:15vw;
+        }
+        
+        .textImg2{
+            width:25vw;
+        }
+        .textImg3{
+            width:40vw;
+        }
+        .text1{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            width:72vw;
+            height:18vh;
+        }
+
+        .btn{
+            cursor:pointer;
+            border-radius: 12px;
+            padding: 8px 15px 8px 15px; 
+            background:#FF8E66;
+            text-align: center;;
+            color:#ffffff;
+            font-size: 24px;
+        }
+        .screenImg{
+            margin-top:15vh;
+            width:26vw;
+            height:70vh;
+        }
+        .screen{
+            width:26vw;
+            height:20vh;
+        }
+        .footer{
+            padding:0;
+            width: 100vw;
+            background: #000000;
+        }
+
+        .img-container{
+            padding-top: 5vh;
+            padding-bottom: 3vh;
+            display: flex; 
+            width:100vw;
+        }
+        .IconImg{
+            margin-left: 70px;
+            margin-right: 70px;
+            width: 20vw;
+            height:5vh;
+        }
+        .store1{
+
+            margin-right: 1vw;
+
+        }
+        .store1,.store2{
+            cursor:pointer;
+            width:10vw;
+            height:5vh;
+        }
+        /* ---------------------------------------------------------------- */
+        .wrapper1{
+            
+            margin-top:1vh;
+            margin-left: 7vw;
+            display: flex; 
+
+        } 
+
+        .ask{
+            cursor:pointer;
+            display:flex;
+            width: 12vw;
+            padding: 10px 10px;
+            border: 2px solid #ffffffdd;
+            font-size: 15px;
+            align-items: center;
+            justify-content: center;
+            color:#ffffffdd;
+            border-radius: 4px;
+        }
+        .time{
+            width:60vw;
+            color:#ffffffdd;
+            list-style: none;
+            margin-left:3vw;
+        }
+        .time1,.time2{
+        font-size: 12px;
+        
+        }
+        .time2{
+         margin-top:0.5vh;
+        
+        }
+        .wrapper2{
+        display:flex;
+        width: 90vw;
+        margin-left: 7vw;
+        margin-top: 2vh;
+        font-size: 13px;
+        color:#ffffffdd;
+        line-height: 25px;
+        }
+
+        .copy{
+            margin:0;
+            display:flex;
+            align-items: center;
+            width:90vw;
+            height:7vh;
+            border-top: 2px solid #ffffffaa;
+            margin-top:4vh;
+            margin-left: 5vw;
+            color:#ffffffaa;
+            font-size:13px;
+        }
+
+
+        @media (max-width: 576px) { 
+            .main{
+                display: block;
+                padding-top:9vh;
+                height:91vh;
+                background:url('https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/background.svg');
+                background-size : cover;
+                background-repeat: no-repeat;
+            }
+            .MainText{
+            margin-top:38vh;
+            width:72vw;
+            height:50vh;
+            }
+
+            .text{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                width:100vw;
+                height:3vh;
+            }   
+            .text1{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                width:100vw;
+                height:18vh;
+            }
+            .textImg1{
+                width:40vw;
+            }
+            
+            .textImg2{
+                width:70vw;
+            }
+            .textImg3{
+                width:90vw;
+            }
+            .screenImg{
+                display:block;
+                position:absolute;
+                top:0vw;
+                left:13vw;
+                width:87vw;
+                height:30vh;
+                padding-top:2vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/Logo.svg" alt="logo" class="logo">
+    </div>
+    <div class="main">
+
+        <div class="MainText">
+            <ul>
+                <li class="text "><img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/text1.svg" alt="text" class="textImg1"></li>
+                <li class="text"><img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/text2.svg" alt="text" class="textImg2"></li>
+                <li class="text1"><img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/text3.svg" alt="text" class="textImg3"></li>
+                <li class="text"> <a th:href="${code}"> <span class="btn">  회원 인증하기 </span> </a> <li>
+            </ul>
+        </div>
+
+        <img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/screenImg.svg" alt="" class="screenImg" >
+     
+    </div>
+    <div class="footer">
+        <div class="img-container">
+            <img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/Logo.svg" alt="AppIcon" class="IconImg">
+            <img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/GoogleStore.svg" alt="GoogleStore" class="store1" onclick="window.location.href='https:\/\/play.google.com/store/apps/details?id=com.deso_android'">
+            <img src="https://deso-file.s3.ap-northeast-2.amazonaws.com/banner/AppleStore.svg" alt="AppleStore" class="store2">
+          </div>
+      
+          <div class="text-container">
+            <div class="wrapper1">
+              <p class="ask">1:1 문의하기</p>
+              <ul class="time">
+                <li class="time1">평일 &nbsp;&nbsp;10 : 00 ~ 17 : 00( 점심시간 13 : 00 ~ 14 : 00) &nbsp;&nbsp;|&nbsp;&nbsp; 공휴일 휴무</li>
+                <li class="time2">토요일 &nbsp;&nbsp;09 : 00 ~ 13 : 00 ( 홈페이지 채팅 문의만 운영 )</li>
+              </ul>
+            </div>
+      
+            <div class="wrapper2">
+              상호명 오드 &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;대표 박장훈 &nbsp;&nbsp;&nbsp;| 
+              주소 충청남도 천안시 동남구 충절로 1600 담헌실학관 307호 &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+              사업자 등록번호 848-48-00535 &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+              통신판매업 2022-충남천안-2528 &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;제휴문의 deso@oddhem.com &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+              카카오플러스 @ &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+              고객센터 1555-5555
+            </div>
+      
+            <p class="copy">Copyright ⓒODD Inc.,All rights reserved.</p>
+    </div>
+</body>
+</html>

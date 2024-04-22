@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESO</title>
+  <link th:href="@{/style.css}" rel="stylesheet">
+  <script th:src="@{/script.js}" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <img th:src="@{/images/header/AppIconColor.svg}" alt="AppIcon" id="header-app-icon"/>
+      <div class="wrapper">
+        <p class="text">서비스 소개</p>
+        <p class="text">기능 소개</p>
+        <p class="text">활용 사례</p>
+        <p class="text">이용 후기</p>
+        <a href="https://main.dvp8yr6clgch.amplifyapp.com">
+          <p class="text DesoStart">DESO 시작하기</p>
+        </a>
+      </div>
+      <img th:src="@{/images/header/MoveTop.svg}" id="move-top"/>
+    </div>
+  </div>
+
+  <div class="section1">
+    <div class="container1">
+      <p class="catchphrase">SOCIALIZE BETTER TOGETHER!</p>
+      <p class="description">대학생 문화생활 소셜링</p>
+      <p class="company">DESO</p>
+      <div class="store-imgs">
+        <a href="https://www.apple.com/kr/app-store/">
+          <img th:src="@{/images/footer/AppleStore.svg}" alt="AppleStore" class="store-img"/>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.deso_android&pli=1">
+          <img th:src="@{/images/footer/GoogleStore.svg}" alt="GoogleStore" class="store-img"/>
+        </a>
+      </div>
+      <div class="social-media-imgs">
+        <img th:src="@{/images/section1/Messanger.svg}" alt="Messanger"   class="social-media img1"/>
+        <img th:src="@{/images/section1/Twitter.svg}"   alt="Twitter"     class="social-media img2"/>
+        <img th:src="@{/images/section1/Instagram.svg}" alt="Instagram"   class="social-media img3"/>
+        <img th:src="@{/images/section1/Youtube.svg}"   alt="Youtube"     class="social-media img4"/>
+      </div>
+    </div>
+    <div class="container2">
+      <img th:src="@{/images/section1/MockUp.svg}" alt="MockUp" class="MockUp"/>
+    </div>
+  </div>
+
+  <div class="section2">
+    <div class="container">
+      <div class="deso-function">
+        <div class="gathering function">
+          <img th:src="@{/images/section2/Gathering.svg}"/>
+          <p class="title">개더링 신청하기</p>
+          <p class="description">누구나 참여할 수 있는 우리만의 모임!</p>
+        </div>
+        <div class="event function">
+          <img th:src="@{/images/section2/Event.svg}"/>
+          <p class="title">이벤트 같이가기</p>
+          <p class="description">게더링으로 함께가면 더욱 신나는 이벤트!</p>
+        </div>
+        <div class="channel function">
+          <img th:src="@{/images/section2/Channel.svg}"/>
+          <p class="title">채널 가입하기</p>
+          <p class="description">관심있는 개더링과 이벤트가 모여있는 채널!</p>
+        </div>
+      </div>
+  
+      <div class="description text">
+        <p class="text1">대학생 문화생활 그룹핑 커뮤니티 플랫폼</p>
+        <p class="text2">더욱 다채로워진 <span>문화생활 소셜링</span>&nbsp커뮤니티</p>
+        <p class="text3">나이 차이 많이나서 <span>어색한 모임은 그만!</span></p>
+        <p class="text4">코드가 맞는 내 또래와의 <span>문화생활 그룹핑!</span></p>
+      </div>
+
+      <div class="socialing">
+        <img th:src="@{/images/section2/SocialingTotal.png}">
+      </div>    
+    </div>
+  </div>
+
+  <div class="section3">
+    <div class="container">
+      <p class="title">기능 소개</p>
+      <p class="sub-title">즐거운 교류를 위한 <span>DESO만의 핵심 기능</span></p>
+      <div class="wrapper">
+        <div class="gathering wrap">
+          <p>우리 오늘 모일까?</p>
+          <p class="style">취향으로 만나는 게더링</p>
+          <img th:src="@{/images/section3/GatheringMockup.svg}"/>
+        </div>
+        <div class="event wrap">
+          <p>이거 같이 갈래?</p>
+          <p class="style">함께하면 더 신나는 이벤트</p>
+          <img th:src="@{/images/section3/EventMockup.svg}"/>
+        </div>
+        <div class="channel wrap">
+          <p>공통된 관심분야를 위한</p>
+          <p class="style">내 맘에 쏙 드는 채널</p>
+          <img th:src="@{/images/section3/ChannelMockup.svg}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section4">
+    <div class="container">
+      <div class="gathering description">
+        <div class="text">
+          <p class="one">FEATURE 01</p>
+          <p class="two">개더링 <span>GATHERING</span></p>
+          <p class="three">누구나 참여하는 우리만의 모임!</p>
+          <p class="four">내가 좋아하는 분야로 개더링에 참여해볼까?</p>
+          <p class="five">아니면 내가 직접 만들어볼까?</p>
+          <p class="six">누구나 만들고 참여하는</p>
+          <p class="seven">우리만의 개더링!</p>
+        </div>
+        <img th:src="@{/images/section3/GatheringMockup.svg}"/>
+      </div>
+      <div class="event description">
+        <img th:src="@{/images/section4/GroupEventMockup.svg}"/>
+        <div class="text">
+          <p class="one">FEATURE 02</p>
+          <p class="two">이벤트<span>EVENT</span></p>
+          <p class="three">함께가면 더욱 신나는 이벤트!</p>
+          <p class="four">개더링으로 만나서 이야기만 나누지 말고,</p>
+          <p class="five">좋아하는 이벤트에 참여해보는건 어때?</p>
+          <p class="six">혼자보단, 함께 즐길 수 있는</p>
+          <p class="seven">개더링으로 이벤트 참여해보자!</p>
+        </div>
+      </div>
+      <div class="channel description">
+        <div class="text">
+          <p class="one">FEATURE 03</p>
+          <p class="two">채널 <span>CHANNEL</span></p>
+          <p class="three">내 관심사가 모여있는 바로 그 곳!</p>
+          <p class="four">단발성으로만 모이기보다,</p>
+          <p class="five">좋아하는 주제로 채널을 만들어볼까?</p>
+          <p class="six">게시판 기능에 채팅 기능까지 있어서</p>
+          <p class="seven">소통하기 편리한 우리들의 관심 공유 창구!</p>
+        </div>
+        <img th:src="@{/images/section3/ChannelMockup.svg}"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="section5">
+    <div class="container">
+      <p class="text1">다양한 활용 사례</p>
+      <p class="text2">대외활동, 문화활동, 스터디 등</p>
+      <p class="text3"><span class="style">DESO</span>와 함께하는 <span class="style two">다양한 문화생활 소셜링!</span></p>
+      <img th:src="@{/images/section4/SocialingExample.svg}">
+    </div>
+  </div>
+
+  <div class="section6">
+    <div class="container">
+      <p class="text1">DESO 이용후기</p>
+      <p class="text2">회원들은 DESO의 <span class="style">이런 부분들이</span> 좋다고 해요!</p>
+      <div class="imgs">
+        <img th:src="@{/images/section4/UserEvaluation1.svg}">
+        <img th:src="@{/images/section4/UserEvaluation2.svg}">
+        <img th:src="@{/images/section4/UserEvaluation3.svg}">
+      </div>
+
+      <div class="download">
+        <div class="container">
+          <div class="wrapper1">
+            <p class="text one">즐거운 교류, 즐거운 문화생활 소셜링</p>
+            <p class="text two">DESO에서 시작해보세요!</p>
+          </div>
+          <div class="wrapper2">
+            <a href="https://www.apple.com/kr/app-store/">
+              <img th:src="@{/images/footer/AppleStore.svg}">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.deso_android&pli=1">
+              <img th:src="@{/images/footer/GoogleStore.svg}">            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="wrapper">
+        <div class="img-container">
+          <img th:src="@{/images/footer/AppIcon.svg}" alt="AppIcon" id="footer-app-icon">
+          <a href="https://www.apple.com/kr/app-store/">
+            <img th:src="@{/images/footer/AppleStore.svg}" alt="GoogleStore" class="goole-store">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.deso_android&pli=1">
+            <img th:src="@{/images/footer/GoogleStore.svg}" alt="AppleStore" class="apple-store">
+          </a>
+        </div>  
+        <div class="text-container">
+          <ul>
+            <li>FAQ</li>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>제휴문의</li>
+            <li>채용문의</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="text-container">
+        <div class="wrapper1">
+          <p>1:1 문의하기</p>
+          <p>
+            <ul>
+              <li>평일 10:00 ~ 17:00(점심시간 13:00 ~14:00) | 공휴일 휴무</li>
+              <li>토요일 09:00 ~ 13:00(홈페이지 채팅문의만 운영)</li>
+            </ul>
+          </p>
+        </div>
+        <div class="wrapper2">
+          <ul>
+            <li>상호명 오드</li>
+            <li>대표 박장훈</li>
+            <li>주소 충청남도 천안시 동남구 충절로 1600 담헌실학관 307호</li>
+            <li>사업자 등록번호 848-48-00535</li>
+            <li>통신판매업 2022-충남천안-2528</li>
+            <li>제휴문의 deso@oddhem.com</li>
+            <li>카카오플러스 @deso</li>
+            <li>고객센터 070-8121-3677</li>
+          </ul>
+          <hr/>
+          <p class="copyright">Copyright ⓒODD Inc.,All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+cloud:
+  aws:
+    s3:
+      bucket: deso-spring
+    credentials:
+      access-key: AKIASY7H32WRP2B77LHG
+      secret-key: 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
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+
+APPLE:
+  AUTH:
+    TOKEN:
+      URL: https://appleid.apple.com/auth/token
+  PUBLICKEY:
+    URL: https://appleid.apple.com/auth/keys
+  WEBSITE:
+    URL: https://main.dvp8yr6clgch.amplifyapp.com/?apple
+  ISS: https://appleid.apple.com
+  AUD : HL4W5PJA88
+  TEAM:
+    ID: deso
+  KEY:
+    ID: S2QY5RNJM6
+    PATH: static/AuthKey_S2QY5RNJM6.p8
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: deso@oddhem.com
+    password: Oddball1959!
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            protocols : TLSv1.2
+          socketFactory:
+            fallback : true
+          starttls:
+            enalble: true
+            required: true
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oddhem?serverTimezone=Asia/Seoul&createDatabaseIfNotExist=true
+    username: root  #cos
+    password: 1234  #Cos1234!
+
+  security:
+    oauth2:
+      client:
+        registration:
+          kakao:
+            client-id: c62b76fa84d535445216da57ad77f38e
+            client-secret: F013WeZjk95XXtomggG4kYUzpVNFjt9I
+            redirect-uri: http://3.35.70.235:8081/login/oauth2/code/kakao
+            authorization-grant-type: authorization_code
+            client-authentication-method: POST
+            client-name: Kakao
+            scope:
+              - gender
+              - account_email
+              - profile_nickname
+              - birthday
+        provider:
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update #create #update #none
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.SpringPhysicalNamingStrategy
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    check-template-location: true
+
+  redis:
+    host: localhost
+    port: 6380
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
